@@ -1,0 +1,20 @@
+% Daniela Rodriguez Rivera
+
+%recuperación
+%05/Julio/2021
+
+%f(x)=9x+x^2-5  [1,8]
+clear
+clc
+
+fun=@(t) sqrt(t)+t;
+integral=quad(fun,1,8) 
+
+x=1:0.1:8;
+v=sqrt(9*x)+x.^2-5;
+area(x,v)
+grid on; 
+title("f(x)=9x+x^2-5");
+xlabel("t");
+
+ylabel("v");
